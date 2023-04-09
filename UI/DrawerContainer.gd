@@ -91,16 +91,12 @@ func adjust_position() -> void:
 				targetPosition = Vector2(parentRightX - rect_size.x, rect_position.y)
 	
 	var tween := create_tween()
-	print("tween called")
-	
 	tween.tween_method(self, "set_position", rect_position, targetPosition, 0.3).set_trans(Tween.TRANS_QUAD).set_ease(Tween.EASE_OUT)
-	
 	moving = true
 	tween.tween_property(self, "moving", false, 0)
 
 
 func on_handle_pressed() -> void:
-	print("handle pressed")
 	close() if isOpen else open()
 
 func open() -> void:
