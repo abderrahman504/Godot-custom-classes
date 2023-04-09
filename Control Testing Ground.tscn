@@ -6,11 +6,45 @@
 anchor_right = 1.0
 anchor_bottom = 1.0
 
-[node name="DrawerContainer" type="PanelContainer" parent="."]
-margin_left = 331.0
-margin_top = 125.0
-margin_right = 708.0
-margin_bottom = 389.0
+[node name="Panel" type="Panel" parent="."]
+margin_left = 377.0
+margin_top = 187.0
+margin_right = 553.0
+margin_bottom = 352.0
+
+[node name="DrawerContainer" type="PanelContainer" parent="Panel"]
+show_behind_parent = true
+margin_left = -160.0
+margin_top = 8.0
+margin_right = -46.0
+margin_bottom = 150.0
 script = ExtResource( 1 )
-attachmentDirection = 3
-handleSize = Vector2( 30, 100 )
+__meta__ = {
+"_edit_group_": true
+}
+attachmentDirection = 2
+handleSize = Vector2( 80, 30 )
+isOpen = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel/DrawerContainer"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 107.0
+margin_bottom = 135.0
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CheckButton" type="CheckButton" parent="Panel/DrawerContainer/VBoxContainer"]
+margin_right = 100.0
+margin_bottom = 40.0
+
+[node name="CheckButton2" type="CheckButton" parent="Panel/DrawerContainer/VBoxContainer"]
+margin_top = 44.0
+margin_right = 100.0
+margin_bottom = 84.0
+
+[node name="CheckButton3" type="CheckButton" parent="Panel/DrawerContainer/VBoxContainer"]
+margin_top = 88.0
+margin_right = 100.0
+margin_bottom = 128.0
