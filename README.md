@@ -1,9 +1,9 @@
 # Godot-custom-classes
-A project for custom classes I made in godot
+A project for custom classes I made for Godot 4
 
 
 ## Drawer Container
-A container that latches to the edge of a parent control and acts like a drawer.
+A container that you place at the edge of a parent control and acts like a drawer.
 Allows to specify which direction the drawer opens to and if it opens to enter the parent boundries or exit them. 
 
 #### An Illustration
